@@ -2,6 +2,12 @@
   "authenticationMethod": "route",
   "routes": [
     {
+      "source": "^/session/link$",
+      "destination": "s4-pp-mcp-backend",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
+    {
       "source": "^/mcp(.*)",
       "destination": "s4-pp-mcp-backend",
       "authenticationType": "xsuaa",

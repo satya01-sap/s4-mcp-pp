@@ -44,6 +44,8 @@ modules:
       - name: s4-pp-mcp-xsuaa
       - name: s4-pp-mcp-destination
       - name: s4-pp-mcp-connectivity
+    properties:
+      APP_URL: https://s4-pp-mcp-${space}.${default-domain}
     provides:
       - name: s4-pp-mcp-server-api
         properties:

@@ -1,7 +1,7 @@
 import { callS4 } from "../s4/client";
 
-export async function getBusinessPartner(supplierId: string, jwt?: string) {
-  const data = await callS4(supplierId, jwt);
+export async function getBusinessPartner(supplierId: string, jwt?: string, sessionId?: string) {
+  const data = await callS4(supplierId, jwt, sessionId);
 
   return {
     supplierId,
